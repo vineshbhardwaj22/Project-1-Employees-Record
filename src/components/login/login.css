@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Login Page Container */
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Header Logo */
+  .nav-header {
+    margin-bottom: 20px;
+  }
+  
+  .header-logo {
+    width: 120px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .header-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Login Container */
+  .login-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Login Form */
+  .login-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Heading */
+  .login-form h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Input Fields */
+  .login-form .form-label {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .login-form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .login-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Submit Button */
+  .submit-btn-cont button {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .submit-btn-cont button:hover {
+    background: linear-gradient(to right, #0056b3, #0093d3);
+    transform: scale(1.05);
+  }
+  
+  /* Register Link */
+  .register-cont1 {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .register-cont1 a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .register-cont1 a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-form {
+      padding: 1.5rem;
+      width: 90%;
+    }
+  
+    .login-form h2 {
+      font-size: 1.5rem;
+    }
+  
+    .submit-btn-cont button {
+      font-size: 1rem;
+    }
+  }
